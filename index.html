@@ -40,16 +40,16 @@
     
     <style>
         :root {
-            --primary-color: #1a202c;
-            --secondary-color: #ecc94b;
+            --primary-color: #FF6B6B; /* Nuevo color coral del logo */
+            --secondary-color: #000000; /* Negro del logo */
         }
         
         .gradient-bg {
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(45deg, var(--primary-color), #FF8585);
         }
         
         .app-gradient-bg {
-            background: linear-gradient(135deg, #ecc94b, #1a202c);
+            background: linear-gradient(135deg, #FF8585, var(--primary-color));
         }
         
         html, body {
@@ -79,7 +79,7 @@
             background-color: #fff;
         }
 
-        .text-primary-color {
+         .text-primary-color {
             color: var(--primary-color);
         }
         
@@ -146,7 +146,7 @@
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     padding: 0.5rem 1rem;
     border-radius: 30px;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(45deg, var(--primary-color), #FF8585);      
     border: none;
     color: white;
     cursor: pointer;
@@ -155,7 +155,7 @@
 /* Efecto Hover para Botones */
 .service-card button:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(135deg, #FF8585, var(--primary-color));
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -876,13 +876,13 @@ h3 {
 
     <!-- Botón flotante de Book Now con notificación -->
 <div class="fixed bottom-20 right-5 z-50 flex items-center">
-    <div id="bookNowNotification" class="bg-yellow-400 text-black px-4 py-2 rounded-full mr-2 opacity-0 transition-opacity duration-300 ease-in-out">
-        Book now here!
+        <div id="bookNowNotification" class="bg-yellow-400 text-black px-4 py-2 rounded-full mr-2 opacity-0 transition-opacity duration-300 ease-in-out">
+            Book now here!
+        </div>
+        <button id="bookNowBtn" class="floating-btn book-now">
+            <img src="img/logo.png" alt="Book Now" class="w-10 h-10">
+        </button>
     </div>
-    <button id="bookNowBtn" class="floating-btn book-now">
-        <img src="img/logo.png" alt="Book Now" class="w-10 h-10">
-    </button>
-</div>
 
     <!-- Modal de reserva -->
     <div id="bookingModal" class="modal">
