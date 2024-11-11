@@ -76,51 +76,51 @@ document.addEventListener('DOMContentLoaded', function() {
     const serviceDetails = {
         wash: {
             title: "Premium Wash & Wax",
-            description: "Our Premium Wash & Wax service is designed to give your vehicle a showroom-quality finish.",
+            description: "Our Premium Wash & Wax service is designed to bring out the shine in your vehicle.",
             features: [
                 "Thorough exterior wash",
-                "Clay bar treatment",
                 "High-quality wax application",
                 "Tire and rim cleaning",
-                "Interior vacuum and wipe-down"
+                "Interior vacuum and wipe-down",
+                "Window cleaning inside and out"
             ],
-            price: "From $49.99"
+            price: "Starting at $79.99"
         },
         interior: {
             title: "Interior Detailing",
             description: "Our Interior Detailing service deep cleans and refreshes your vehicle's interior.",
             features: [
-                "Thorough vacuuming",
-                "Steam cleaning of upholstery",
+                "Thorough vacuuming of all surfaces",
+                "Steam cleaning of upholstery and carpets",
                 "Leather treatment (if applicable)",
-                "Dashboard and console cleaning",
-                "Window and mirror cleaning"
+                "Dashboard and console deep cleaning",
+                "Air vent sanitization"
             ],
-            price: "From $89.99"
+            price: "Starting at $129.99"
         },
         paint: {
             title: "Paint Correction",
             description: "Our Paint Correction service removes imperfections and restores your vehicle's paint to its original glory.",
             features: [
                 "Multi-stage polishing process",
-                "Swirl and scratch removal",
+                "Swirl and light scratch removal",
                 "Paint depth measurement",
                 "High-gloss finish",
                 "Protective sealant application"
             ],
-            price: "From $199.99"
+            price: "Starting at $249.99"
         },
         ceramic: {
             title: "Ceramic Coating",
             description: "Our Ceramic Coating service provides long-lasting protection and an unmatched shine for your vehicle.",
             features: [
-                "Paint decontamination",
-                "Single-stage paint correction",
+                "Paint decontamination and correction",
                 "Professional-grade ceramic coating application",
-                "Hydrophobic properties",
-                "UV protection"
+                "Hydrophobic and UV protection properties",
+                "Enhanced gloss and depth",
+                "12-18 month durability"
             ],
-            price: "From $299.99"
+            price: "Starting at $599.99"
         }
     };
 
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Booking Modal y Notificación
+    // Booking Modal and Notification
     const bookNowBtn = document.getElementById('bookNowBtn');
     const bookingModal = document.getElementById('bookingModal');
     const closeBookingModal = bookingModal.querySelector('.close');
@@ -280,5 +280,5 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true,
     });
 
-    console.log('Script loaded and running');
+    console.log('Script loaded and running for Intercoastal Detailing');
 });
